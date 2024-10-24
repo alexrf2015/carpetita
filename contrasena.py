@@ -8,11 +8,13 @@ for i in range (longitud):
 print (f"esta es tu contraseña {guarda_resultado}")
 palabra = input("quieres terminar el juego ")
 if palabra == "no":
-    if palabra == "no":
+    jugar = True
+    while jugar:
         print ("entra a la casa")
         print ("cual es el codigo")
         resultado = input("cual es la contrasenia ")
         if resultado == guarda_resultado:
             print ("bien")
+            jugar = False
         else:
             print ("mal")
